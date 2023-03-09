@@ -1,0 +1,104 @@
+<script>
+          
+     var nama = "Anggita Afrelia";
+     var perkerjaan = "Dosen"; // tipe data String atau Char
+     
+     // mencetak variabel
+     document.write("<h3 align='center'> Belajar JavaScript </h3>");
+     document.write("<hr/>");
+     document.write("<br> Nama Mahasiswa : " + nama);
+     
+</script>
+
+<br><br>
+
+<script>
+     //Segitiga
+     function luas(alas, tinggi) {
+       return 0,5 * alas * tinggi;
+     }
+   
+     function keliling(sisi1, sisi2, sisi3) {
+       return sisi1 + sisi2 + sisi3;
+     }
+   
+     var alas = 3;
+     var tinggi = 5;
+     var sisi1 = 7;
+     var sisi2 = 9;
+     var sisi3 = 11;
+     var luas = luas(alas, tinggi);
+     var keliling = keliling(sisi1, sisi2, sisi3);
+   
+     document.write("Diketahui sebuah Segitiga <br> Alas : " + alas + "cm" +
+     "<br> Tinggi " + tinggi + "cm" +
+     "<br> Sisi 1 : " + sisi1 + "cm" +
+     "<br> Sisi 2 : " + sisi2 + "cm" +
+     "<br> Sisi 3 : " + sisi3 + "cm"
+     );
+
+     document.write("<br> Luas Segitiga = " + luas + "<br>");
+     document.write("Keliling Segitiga = " + keliling + "<br>");
+
+
+</script>
+   
+
+<br>
+
+
+<script>
+     //Persegi Panjang
+     function luas(panjang, lebar) {
+       return panjang * lebar;
+     }
+   
+     function keliling(panjang, lebar) {
+       return 2 * (panjang + lebar);
+     }
+   
+     var panjang = 11;
+     var lebar = 7;
+     var luas = luas(panjang, lebar);
+     var keliling = keliling(panjang, lebar);
+   
+     document.write("Diketahui sebuah Persegi Panjang <br> Panjang : " + panjang + "cm" +
+     "<br> Lebar : " + lebar + "cm"
+     );
+     
+     document.write("<br> Luas Persegi Panjang = " + luas + "<br>");
+     document.write("Keliling Persegi Panjang = " + keliling + "<br>");
+</script>
+
+
+<br>
+
+
+<script>
+     // Janjar Genjang
+     function luas(alas, tinggi) {
+       return alas * tinggi;
+     }
+   
+     function keliling(sisi1, sisi2) {
+       return 2 * (sisi1 + sisi2);
+     }
+   
+     var alas = 11;
+     var tinggi = 9;
+     var sisi1 = 5;
+     var sisi2 = 7;
+     var luas = luas(alas, tinggi);
+     var keliling = keliling(sisi1, sisi2);
+   
+     document.write("Diketahui sebuah Jajargenjang <br> Alas : " + alas + "cm" +
+     "<br> Tinggi " + tinggi + "cm" +
+     "<br> Sisi 1 : " + sisi1 + "cm" +
+     "<br> Sisi 2 : " + sisi2 + "cm"
+     );
+
+     document.write("<br> Luas Jajar Genjang = " + luas + "<br>");
+     document.write("Keliling Jajar Genjang = " + keliling + "<br>");
+</script>
+   
+   
