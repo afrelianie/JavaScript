@@ -1,0 +1,44 @@
+<script>
+
+     //Data
+     let pegawai = "Anggita Afrelianie";
+     let jabatan = "Manager";
+     let status = "Sendiri";
+     let gaji = 0;
+     let bpjs = 0;
+     let tKeluarga = 0;
+     let tJabatan = 0;
+     let pendapatan = 0;
+     
+     //Jabatan
+     switch (jabatan){
+          case 'Manager' : gaji = 10000000; break;
+          case 'Asisten' : gaji = 8000000; break;
+          case 'Staff' : gaji = 5000000; break;
+          default: gaji = 0;
+     }
+
+     //Hitungan gaji
+     tJabatan = gaji * 0.1;
+     bpjs = gaji * 0.1;
+
+     if (status == "Menikah") {
+          tKeluarga = 0.1 * gaji;
+     }
+     pendapatan = gaji + tJabatan + bpjs + tKeluarga;
+
+
+     document.write("Data Pegawai " + 
+     "<br> Pegawai : " + pegawai +
+     "<br> Jabatan : " + jabatan +
+     "<br> Status : " + status +
+     "<br> Total BPJS : " + bpjs  +
+     "<br> Jumlah gaji pokok : " + gaji +
+     "<br> Tunjangan Keluarga : " + tKeluarga +
+     "<br> Tunjangan Jabatan : " + tJabatan +
+     "<br> Total pendapatan : " + pendapatan
+     );
+
+</script>
+
+
