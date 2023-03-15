@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Javascript</title>
+</head>
+<body>
+	<table id="myTable">
+		<tr>
+			<th>Nomor</th>
+			<th>Nama</th>
+			<th>Nilai</th>
+			<th>Grade</th>
+			<th>Predikat</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Anggie</td>
+			<td>85</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Budi</td>
+			<td>73</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Ayu</td>
+			<td>97</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<script>
+		// ambil tabel dengan id myTable
+		var table = document.getElementById("myTable");
+
+		// loop melalui setiap baris, mulai dari baris kedua (indeks 1)
+		for (var i = 1; i < table.rows.length; i++) {
+
+			// ambil nilai dari sel kedua di baris ini
+			var nilai = parseInt(table.rows[i].cells[2].innerHTML);
+
+			// tentukan grade berdasarkan nilai
+			var grade;
+			if (nilai >= 90 && nilai <= 100) {
+				grade = "A";
+			} else if (nilai >= 80 && nilai < 90) {
+				grade = "B";
+			} else if (nilai >= 70 && nilai < 80) {
+				grade = "C";
+			} else if (nilai >= 60 && nilai < 70) {
+				grade = "D";
+			} else {
+				grade = "E";
+			}
+
+			// tentukan predikat berdasarkan grade menggunakan switch case
+			var predikat;
+			switch (grade) {
+				case "A":
+					predikat = "Sangat Baik";
+					break;
+				case "B":
+					predikat = "Baik";
+					break;
+				case "C":
+					predikat = "Cukup";
+					break;
+				case "D":
+					predikat = "Kurang";
+					break;
+				default:
+					predikat = "Sangat Kurang";
+			}
+
+			// atur warna background berdasarkan grade
+			switch (grade) {
+				case "A":
+					table.rows[i].style.backgroundColor = "green";
+					break;
+				case "B":
+					table.rows[i].style.backgroundColor = "blue";
+					break;
+				case "C":
+					table.rows[i].style.backgroundColor = "yellow";
+					break;
+				case "D":
+					table.rows[i].style.backgroundColor = "orange";
+					break;
+				default:
+					table.rows[i].style.backgroundColor = "red";
+			}
+
+			// set nilai grade dan predikat di kolom 4 dan 5
+			table.rows[i].cells[3].innerHTML = grade;
+			table.rows[i].cells[4].innerHTML = predikat;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
