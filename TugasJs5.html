@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas 6</title>
+     <script src=""></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		img {
+			height: 200px;
+			width: 300px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<fieldset> 
+     <legend>
+          <font color="blod" size="5" face="calibri">
+               Penampilan Gambar dan Hide jika Di klik
+          </font>
+     </legend>
+          <img src="css/one piece.jpg" class="gambar" />
+          <img src="css/allah.jpg" class="gambar" />
+          <img src="css/allah.png" class="gambar" />
+	<script>
+		$(document).ready(function() {
+			$('.gambar').click(function() {
+				$(this).hide();
+			});
+		});
+	</script>
+</fieldset>
+
+</body>
+</html>
